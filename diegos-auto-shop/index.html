@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego's Auto Shop | Auto Repair in Salt Lake City, UT</title>
+<meta name="description" content="Diego's Auto Shop - family-owned auto repair in the Granary District, Salt Lake City. Honest diagnostics, maintenance & repairs. Se habla espanol.">
+<style>
+  :root{
+    --dark:#1a1a1a;
+    --orange:#d9541f;
+    --steel:#3c4a54;
+    --light:#f4f4f2;
+    --gray:#5a5a5a;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--dark);
+    background:var(--light);
+    font-size:17px;
+    line-height:1.55;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    background:var(--dark);
+    color:var(--white);
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
+  }
+  .nav-wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 20px;max-width:1100px;margin:0 auto;
+  }
+  .brand{font-size:1.2rem;font-weight:800;text-decoration:none;color:var(--white);}
+  .brand span{color:var(--orange);}
+  nav.links{display:none;gap:22px;}
+  nav.links a{text-decoration:none;color:var(--white);font-size:0.95rem;padding:10px 4px;}
+  nav.links a:hover{color:var(--orange);}
+  .call-btn{
+    background:var(--orange);color:var(--white);
+    padding:10px 18px;border-radius:4px;text-decoration:none;
+    font-weight:bold;font-size:0.95rem;white-space:nowrap;
+    min-height:44px;display:flex;align-items:center;
+  }
+  .hamburger{
+    display:flex;flex-direction:column;justify-content:center;gap:5px;
+    background:none;border:none;cursor:pointer;padding:10px;
+    min-width:44px;min-height:44px;
+  }
+  .hamburger span{display:block;width:26px;height:3px;background:var(--white);}
+  .mobile-menu{display:none;flex-direction:column;background:var(--dark);padding:0 20px 16px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:var(--white);text-decoration:none;padding:12px 0;border-top:1px solid rgba(255,255,255,0.15);font-size:1rem;}
+
+  @media (min-width:800px){
+    nav.links{display:flex;}
+    .hamburger{display:none;}
+  }
+
+  .hero{
+    background:linear-gradient(rgba(20,20,20,0.75),rgba(20,20,20,0.85)),
+      url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color:var(--white);text-align:center;padding:90px 20px 70px;
+  }
+  .hero h1{font-size:2.2rem;line-height:1.2;margin-bottom:14px;}
+  .hero p.tag{font-size:1.1rem;margin-bottom:28px;color:#e8e6e2;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+  .btn{display:inline-block;padding:14px 26px;border-radius:4px;text-decoration:none;font-weight:bold;min-height:44px;}
+  .btn-primary{background:var(--orange);color:var(--white);}
+  .btn-outline{background:transparent;border:2px solid var(--white);color:var(--white);}
+
+  section{padding:60px 0;}
+  h2{font-size:1.8rem;text-align:center;margin-bottom:10px;color:var(--dark);}
+  .section-sub{text-align:center;color:var(--gray);margin-bottom:40px;font-size:1.05rem;}
+  .divider{width:60px;height:4px;background:var(--orange);margin:0 auto 20px;}
+
+  .about-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center;}
+  .about-grid img{border-radius:6px;}
+  .about-text p{margin-bottom:16px;color:var(--gray);}
+  @media(min-width:760px){.about-grid{grid-template-columns:1fr 1fr;}}
+
+  .services-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  @media(min-width:640px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:1000px){.services-grid{grid-template-columns:repeat(3,1fr);}}
+  .service-card{
+    background:var(--white);border-radius:6px;padding:26px 22px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);border-top:4px solid var(--orange);
+  }
+  .service-card h3{margin-bottom:8px;font-size:1.15rem;}
+  .service-card p{color:var(--gray);font-size:0.97rem;}
+
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+  @media(min-width:700px){.gallery-grid{grid-template-columns:repeat(4,1fr);}}
+  .gallery-grid img{border-radius:6px;height:180px;width:100%;object-fit:cover;}
+  .stock-note{text-align:center;color:var(--gray);font-size:0.85rem;margin-top:14px;}
+
+  .reviews-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  @media(min-width:760px){.reviews-grid{grid-template-columns:repeat(2,1fr);}}
+  .review-card{background:var(--white);padding:24px;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,0.08);}
+  .stars{color:#d8a92f;margin-bottom:10px;font-size:1.1rem;}
+  .review-card p.quote{font-style:italic;color:var(--dark);margin-bottom:10px;}
+  .review-card p.who{color:var(--gray);font-size:0.9rem;}
+
+  .hours-wrap{display:grid;grid-template-columns:1fr;gap:30px;}
+  @media(min-width:800px){.hours-wrap{grid-template-columns:1fr 1fr;}}
+  table.hours{width:100%;border-collapse:collapse;background:var(--white);border-radius:6px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.08);}
+  table.hours td{padding:12px 18px;border-bottom:1px solid #eee;}
+  table.hours tr:last-child td{border-bottom:none;}
+  table.hours td:last-child{text-align:right;font-weight:bold;color:var(--orange);}
+  iframe{width:100%;height:320px;border:0;border-radius:6px;}
+
+  .cta-section{background:var(--steel);color:var(--white);text-align:center;}
+  .cta-section h2{color:var(--white);}
+  .cta-section p{color:#dfe4e7;margin-bottom:26px;}
+  .contact-details{display:flex;flex-direction:column;gap:14px;align-items:center;margin-top:20px;}
+  .contact-details a{text-decoration:none;color:var(--white);font-size:1.05rem;}
+
+  footer{background:#111;color:#b7c0c9;text-align:center;padding:30px 20px;font-size:0.9rem;}
+  footer a{color:#f0a06a;text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="#top" class="brand">Diego's <span>Auto Shop</span></a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#hours">Hours &amp; Location</a>
+    </nav>
+    <a class="call-btn" href="tel:+13854742909">Call (385) 474-2909</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#hours">Hours &amp; Location</a>
+    <a href="tel:+13854742909">Call (385) 474-2909</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <h1>Honest Auto Repair You Can Trust</h1>
+    <p class="tag">Family-owned &amp; locally operated in the Granary District, Salt Lake City &mdash; se habla espa&ntilde;ol.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="tel:+13854742909">Call (385) 474-2909</a>
+      <a class="btn btn-outline" href="#hours">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <img src="https://images.unsplash.com/photo-1632823471565-1ecdf7c6d1f1?auto=format&fit=crop&w=900&q=80" alt="Stock photo of a mechanic working under a car hood">
+    <div class="about-text">
+      <h2 style="text-align:left;">Our Shop</h2>
+      <div class="divider" style="margin-left:0;"></div>
+      <p>Diego's Auto Shop is a local, family-owned auto repair business located at 911 Rio Grande St in Salt Lake City's Granary District, serving the Peoples Freeway and Ballpark neighborhoods.</p>
+      <p>We focus on honest diagnostics, transparent pricing, and clear communication &mdash; so you always know exactly what your vehicle needs before any work begins. Our team, led by manager Angel, is proud to be a trusted, growing shop in the community.</p>
+      <p>We're happy to serve both English and Spanish-speaking customers &mdash; se habla espa&ntilde;ol.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:#eceae6;">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Call ahead or stop by for a quote &mdash; we're happy to answer questions.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Auto Diagnosis &amp; Inspection</h3>
+        <p>Thorough, honest diagnostics to pinpoint the real issue before any repair begins.</p>
+      </div>
+      <div class="service-card">
+        <h3>Auto Maintenance</h3>
+        <p>Routine maintenance to keep your car, truck, or SUV running reliably mile after mile.</p>
+      </div>
+      <div class="service-card">
+        <h3>Auto Repairs</h3>
+        <p>General repairs including AC service, performed with fair pricing and clear explanations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <h2>Shop Gallery</h2>
+    <div class="divider"></div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=500&q=80" alt="Stock photo of an auto repair shop bay">
+      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=500&q=80" alt="Stock photo of mechanic tools">
+      <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=500&q=80" alt="Stock photo of a car engine being serviced">
+      <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=500&q=80" alt="Stock photo of a mechanic using a diagnostic tool">
+    </div>
+    <p class="stock-note">Photos shown are representative stock images for preview purposes, not actual shop photos.</p>
+  </div>
+</section>
+
+<section id="reviews" style="background:#eceae6;">
+  <div class="container">
+    <h2>What Customers Say</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Highly rated across Yelp and other review sites.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">&ldquo;Took my truck in for AC issues and thought they were pretty honest and trustworthy.&rdquo;</p>
+        <p class="who">&mdash; Yelp review</p>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">&ldquo;Fair pricing, prompt, efficient, pleasant employees who explained everything to my satisfaction.&rdquo;</p>
+        <p class="who">&mdash; Roadtrippers review</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="container hours-wrap">
+    <div>
+      <h2 style="text-align:left;">Hours</h2>
+      <div class="divider" style="margin-left:0;"></div>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:30 AM &ndash; 6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2 style="text-align:left;">Location</h2>
+      <div class="divider" style="margin-left:0;"></div>
+      <iframe src="https://www.google.com/maps?q=911+Rio+Grande+St,+Salt+Lake+City,+UT+84101&output=embed" loading="lazy" title="Map to Diego's Auto Shop"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Need Your Car Checked?</h2>
+    <p>Call today to schedule a diagnosis or ask about a repair quote.</p>
+    <div class="contact-details">
+      <a href="tel:+13854742909">&#128222; (385) 474-2909</a>
+      <a href="https://www.google.com/maps?q=911+Rio+Grande+St,+Salt+Lake+City,+UT+84101" target="_blank" rel="noopener">&#128205; 911 Rio Grande St, Salt Lake City, UT 84101</a>
+      <a href="https://www.facebook.com/p/Diegos-Auto-Shop-61572219120818/" target="_blank" rel="noopener">Follow us on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Diego's Auto Shop &middot; 911 Rio Grande St, Salt Lake City, UT 84101 &middot; <a href="tel:+13854742909">(385) 474-2909</a></p>
+  <p style="margin-top:8px;">Website preview crafted by Eric Walker Web Design.</p>
+</footer>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburgerBtn.addEventListener('click', function(){
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(function(link){
+    link.addEventListener('click', function(){
+      mobileMenu.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heights Handyman Services | Salt Lake City, UT</title>
+<meta name="description" content="Heights Handyman Services - small, locally owned handyman and carpentry company serving Salt Lake City, UT.">
+<style>
+  :root{--wood:#7a4a2b; --wood-dark:#5a3620; --accent:#d98324; --light:#faf5ef; --text:#2b2320;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:#fff;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  header{position:sticky;top:0;z-index:50;background:var(--wood-dark);color:#fff;}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1100px;margin:0 auto;}
+  .brand{font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none;}
+  nav ul{list-style:none;display:none;gap:24px;margin:0;padding:0;}
+  nav a{text-decoration:none;color:#fff;font-weight:600;}
+  .call-btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:6px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap;}
+  .hamburger{display:block;background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;min-width:44px;min-height:44px;}
+  .mobile-menu{display:none;flex-direction:column;background:var(--wood);}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#fff;text-decoration:none;padding:14px 20px;border-top:1px solid rgba(255,255,255,.15);font-weight:600;min-height:44px;}
+  .hero{background:linear-gradient(rgba(60,35,20,.75),rgba(60,35,20,.82)),url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;color:#fff;padding:90px 20px 70px;text-align:center;}
+  .hero h1{font-size:2.1rem;margin:0 0 14px;}
+  .hero p{font-size:1.1rem;max-width:620px;margin:0 auto 28px;opacity:.95;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+  .btn-primary{background:var(--accent);color:#fff;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center;}
+  .btn-outline{border:2px solid #fff;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center;}
+  section{padding:60px 0;}
+  h2{font-size:1.7rem;color:var(--wood-dark);text-align:center;margin-bottom:10px;}
+  .lead{text-align:center;max-width:650px;margin:0 auto 36px;color:#555;}
+  .grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  .card{background:var(--light);border-radius:10px;padding:22px;border-left:4px solid var(--accent);}
+  .card h3{margin:0 0 8px;color:var(--wood-dark);font-size:1.1rem;}
+  .card p{margin:0;color:#555;font-size:.97rem;}
+  .about{background:var(--light);}
+  .about-wrap{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;}
+  .about img{border-radius:10px;}
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+  .badge{background:var(--wood-dark);color:#fff;padding:8px 14px;border-radius:20px;font-size:.85rem;font-weight:600;}
+  .hours-loc{display:grid;grid-template-columns:1fr;gap:28px;}
+  .hours-table{width:100%;border-collapse:collapse;}
+  .hours-table td{padding:8px 0;border-bottom:1px solid #e9ddd0;}
+  iframe{width:100%;height:280px;border:0;border-radius:10px;}
+  .contact-cta{background:var(--wood-dark);color:#fff;text-align:center;padding:60px 20px;}
+  .contact-cta h2{color:#fff;}
+  .contact-cta .btn-primary{margin-top:14px;}
+  footer{background:#3c2314;color:#e9d9c8;text-align:center;padding:30px 20px;font-size:.9rem;}
+  footer a{color:#f0c492;}
+  .stock-note{font-size:.75rem;color:#9c8468;margin-top:6px;}
+  @media(min-width:640px){
+    .grid{grid-template-columns:repeat(2,1fr);}
+    .hours-loc{grid-template-columns:1fr 1fr;}
+  }
+  @media(min-width:1024px){
+    nav ul{display:flex;}
+    .hamburger{display:none;}
+    .mobile-menu{display:none!important;}
+    .grid{grid-template-columns:repeat(3,1fr);}
+    .about-wrap{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:2.6rem;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <a href="#top" class="brand">Heights Handyman Services</a>
+    <nav><ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hours">Hours &amp; Area</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a href="tel:+13854754557" class="call-btn">Call (385) 475-4557</a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="document.getElementById('mmenu').classList.toggle('open')">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#hours">Hours &amp; Area</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <h1>Reliable Home Repairs in Salt Lake City</h1>
+    <p>Small, locally owned handyman and carpentry company treating every home like our own — no job too small or too complex.</p>
+    <div class="cta-row">
+      <a href="tel:+13854754557" class="btn-primary">Call Now: (385) 475-4557</a>
+      <a href="#contact" class="btn-outline">Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>What We Do</h2>
+    <p class="lead">From appliance installs to custom builds, we handle a wide range of home repair and improvement projects.</p>
+    <div class="grid">
+      <div class="card"><h3>Appliance Installation</h3><p>Refrigerator, range and range hood installation.</p></div>
+      <div class="card"><h3>Shower &amp; Door Enclosures</h3><p>Shower door enclosure installation and bathroom fixes.</p></div>
+      <div class="card"><h3>Custom Fireplace Builds</h3><p>Fireplace builds with custom finishes, inserts and TV mounting.</p></div>
+      <div class="card"><h3>Concrete &amp; Decking</h3><p>Concrete step upgrades and custom deck work.</p></div>
+      <div class="card"><h3>General Carpentry</h3><p>Home repair and improvement projects of all sizes.</p></div>
+      <div class="card"><h3>TV Mounting</h3><p>Clean, secure TV mounting for any room.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-wrap">
+    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=60" alt="Handyman tools and workbench">
+    <div>
+      <h2 style="text-align:left">About Us</h2>
+      <p>Heights Handyman Services is a small, locally owned business owned and operated by Noah Slusher, who prides himself on hard work and attention to detail. There is no job too small or too complex — the team treats your home as if it were their own.</p>
+      <p>Customers highlight meticulous attention to detail and quality results, from upgrading concrete back steps to building custom Trex deck waterfall stairs.</p>
+      <div class="badge-row">
+        <span class="badge">Locally Owned</span>
+        <span class="badge">5.0★ on Yelp</span>
+        <span class="badge">Central City, SLC</span>
+      </div>
+      <p class="stock-note">Photo is representative stock imagery, not an actual job site.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="container hours-loc">
+    <div>
+      <h2 style="text-align:left">Hours</h2>
+      <table class="hours-table">
+        <tr><td>Monday – Friday</td><td>9:00 AM – 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM – 4:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <h2 style="text-align:left;margin-top:30px">Service Area</h2>
+      <p>Serving the Salt Lake City area, including Central City and Downtown.</p>
+    </div>
+    <div>
+      <h2 style="text-align:left">Location</h2>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Salt+Lake+City,+UT+84111&output=embed" title="Heights Handyman Services service area map"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta" id="contact">
+  <div class="container">
+    <h2>Have a Project in Mind?</h2>
+    <p>Call today for a quote — we treat your home like our own.</p>
+    <a href="tel:+13854754557" class="btn-primary">Call (385) 475-4557</a>
+  </div>
+</section>
+
+<footer>
+  <p>Heights Handyman Services &middot; Salt Lake City, UT 84111 &middot; <a href="tel:+13854754557">(385) 475-4557</a></p>
+  <p>&copy; 2026 Heights Handyman Services. All rights reserved.</p>
+</footer>
+</body>
+</html>

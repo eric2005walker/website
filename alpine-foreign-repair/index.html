@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpine Foreign Repair | Audi & Volkswagen Specialists in Salt Lake City</title>
+<meta name="description" content="Alpine Foreign Repair - trusted Audi and Volkswagen auto repair specialists in Salt Lake City, UT since 1981.">
+<style>
+  :root{--charcoal:#1d2124; --charcoal-dark:#101214; --accent:#c0392b; --light:#f5f5f5; --text:#1f1f1f;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:#fff;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  header{position:sticky;top:0;z-index:50;background:var(--charcoal);color:#fff;}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1100px;margin:0 auto;}
+  .brand{font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none;}
+  nav ul{list-style:none;display:none;gap:24px;margin:0;padding:0;}
+  nav a{text-decoration:none;color:#fff;font-weight:600;}
+  .call-btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:6px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap;}
+  .hamburger{display:block;background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;min-width:44px;min-height:44px;}
+  .mobile-menu{display:none;flex-direction:column;background:var(--charcoal-dark);}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#fff;text-decoration:none;padding:14px 20px;border-top:1px solid rgba(255,255,255,.1);font-weight:600;min-height:44px;}
+  .hero{background:linear-gradient(rgba(16,18,20,.75),rgba(16,18,20,.85)),url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;color:#fff;padding:90px 20px 70px;text-align:center;}
+  .hero h1{font-size:2.1rem;margin:0 0 14px;}
+  .hero p{font-size:1.1rem;max-width:620px;margin:0 auto 28px;opacity:.95;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+  .btn-primary{background:var(--accent);color:#fff;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center;}
+  .btn-outline{border:2px solid #fff;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center;}
+  section{padding:60px 0;}
+  h2{font-size:1.7rem;color:var(--charcoal);text-align:center;margin-bottom:10px;}
+  .lead{text-align:center;max-width:650px;margin:0 auto 36px;color:#555;}
+  .grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  .card{background:var(--light);border-radius:10px;padding:22px;border-left:4px solid var(--accent);}
+  .card h3{margin:0 0 8px;color:var(--charcoal);font-size:1.1rem;}
+  .card p{margin:0;color:#555;font-size:.97rem;}
+  .about{background:var(--light);}
+  .about-wrap{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;}
+  .about img{border-radius:10px;}
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+  .badge{background:var(--charcoal);color:#fff;padding:8px 14px;border-radius:20px;font-size:.85rem;font-weight:600;}
+  .hours-loc{display:grid;grid-template-columns:1fr;gap:28px;}
+  .hours-table{width:100%;border-collapse:collapse;}
+  .hours-table td{padding:8px 0;border-bottom:1px solid #e3e3e3;}
+  iframe{width:100%;height:280px;border:0;border-radius:10px;}
+  .contact-cta{background:var(--charcoal);color:#fff;text-align:center;padding:60px 20px;}
+  .contact-cta h2{color:#fff;}
+  .contact-cta .btn-primary{margin-top:14px;}
+  footer{background:var(--charcoal-dark);color:#d7d7d7;text-align:center;padding:30px 20px;font-size:.9rem;}
+  footer a{color:#e68a7d;}
+  .stock-note{font-size:.75rem;color:#9a9a9a;margin-top:6px;}
+  @media(min-width:640px){
+    .grid{grid-template-columns:repeat(2,1fr);}
+    .hours-loc{grid-template-columns:1fr 1fr;}
+  }
+  @media(min-width:1024px){
+    nav ul{display:flex;}
+    .hamburger{display:none;}
+    .mobile-menu{display:none!important;}
+    .grid{grid-template-columns:repeat(3,1fr);}
+    .about-wrap{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:2.6rem;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <a href="#top" class="brand">Alpine Foreign Repair</a>
+    <nav><ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hours">Hours &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a href="tel:+18013556459" class="call-btn">Call (801) 355-6459</a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="document.getElementById('mmenu').classList.toggle('open')">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#hours">Hours &amp; Location</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <h1>Salt Lake City's Audi &amp; Volkswagen Specialists</h1>
+    <p>Quality, comprehensive auto repair and maintenance for luxury German automobiles since 1981.</p>
+    <div class="cta-row">
+      <a href="tel:+18013556459" class="btn-primary">Call Now: (801) 355-6459</a>
+      <a href="#contact" class="btn-outline">Schedule Service</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="lead">From oil changes to full diagnostics, our team specializes in Audi and Volkswagen vehicles.</p>
+    <div class="grid">
+      <div class="card"><h3>Oil Changes</h3><p>Routine maintenance to keep your Audi or VW running smoothly.</p></div>
+      <div class="card"><h3>Full Diagnostics</h3><p>Comprehensive diagnostic procedures for performance and reliability.</p></div>
+      <div class="card"><h3>Brake Repair</h3><p>Expert brake service for safe, confident driving.</p></div>
+      <div class="card"><h3>Engine Repair</h3><p>Repairs for major and minor engine issues.</p></div>
+      <div class="card"><h3>Transmission Repair</h3><p>Diagnosis and repair of transmission problems.</p></div>
+      <div class="card"><h3>Steering &amp; Suspension</h3><p>Suspension and steering repair for a smooth ride.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-wrap">
+    <img src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e3a?auto=format&fit=crop&w=800&q=60" alt="Mechanic working under car hood">
+    <div>
+      <h2 style="text-align:left">About Us</h2>
+      <p>Alpine Foreign Repair has provided quality, comprehensive auto repair and maintenance services in the Salt Lake Valley for over 34 years, specializing in Audi and Volkswagen vehicles. Co-owners Joe Bonham and Wendell Lee met decades ago as young service technicians at an Audi dealership.</p>
+      <p>Customers consistently praise the team for being honest, trustworthy, and for never pushing unnecessary services.</p>
+      <div class="badge-row">
+        <span class="badge">Audi &amp; VW Specialists</span>
+        <span class="badge">4.5★ on Yelp</span>
+        <span class="badge">Serving SLC Since 1981</span>
+      </div>
+      <p class="stock-note">Photo is representative stock imagery, not an actual job site.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="container hours-loc">
+    <div>
+      <h2 style="text-align:left">Hours</h2>
+      <table class="hours-table">
+        <tr><td>Monday – Friday</td><td>7:30 AM – 5:30 PM</td></tr>
+        <tr><td>Saturday – Sunday</td><td>Closed</td></tr>
+      </table>
+      <h2 style="text-align:left;margin-top:30px">Specialty</h2>
+      <p>Audi and Volkswagen maintenance and repair — from oil changes to major repairs.</p>
+    </div>
+    <div>
+      <h2 style="text-align:left">Location</h2>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=341+E+900+S,+Salt+Lake+City,+UT+84111&output=embed" title="Alpine Foreign Repair map"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta" id="contact">
+  <div class="container">
+    <h2>Need Service for Your Audi or VW?</h2>
+    <p>Call today to schedule an appointment with Salt Lake City's trusted specialists.</p>
+    <a href="tel:+18013556459" class="btn-primary">Call (801) 355-6459</a>
+  </div>
+</section>
+
+<footer>
+  <p>Alpine Foreign Repair &middot; 341 E 900 S, Salt Lake City, UT 84111 &middot; <a href="tel:+18013556459">(801) 355-6459</a></p>
+  <p>&copy; 2026 Alpine Foreign Repair. All rights reserved.</p>
+</footer>
+</body>
+</html>

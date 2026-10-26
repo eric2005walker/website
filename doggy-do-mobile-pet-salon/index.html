@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doggy Do Mobile Pet Salon | Mobile Dog & Cat Grooming - Salt Lake City</title>
+<meta name="description" content="Doggy Do Mobile Pet Salon - mobile dog and cat grooming serving Salt Lake City, West Jordan, Murray, West Valley City and South Jordan, UT.">
+<style>
+  :root{--teal:#1b7a72; --teal-dark:#0f4b46; --coral:#ff8a5c; --light:#f6faf9; --text:#20302c;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:var(--light);}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  header{position:sticky;top:0;z-index:100;background:var(--teal-dark);color:#fff;}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1100px;margin:0 auto;}
+  .logo{font-weight:700;font-size:1.2rem;color:#fff;text-decoration:none;}
+  nav ul{list-style:none;display:none;flex-direction:column;background:var(--teal-dark);position:absolute;top:100%;left:0;right:0;padding:10px 20px;}
+  nav ul.open{display:flex;}
+  nav a{display:block;padding:12px 0;color:#fff;text-decoration:none;font-size:1rem;min-height:44px;}
+  .call-btn{background:var(--coral);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center;}
+  .hamburger{display:block;background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;min-width:44px;min-height:44px;}
+  .hero{background:linear-gradient(rgba(15,75,70,.75),rgba(15,75,70,.75)),url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1400&q=80') center/cover;color:#fff;padding:70px 20px;text-align:center;}
+  .hero h1{font-size:2rem;margin-bottom:16px;}
+  .hero p{font-size:1.1rem;max-width:600px;margin:0 auto 24px;}
+  .cta{background:var(--coral);color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block;min-height:44px;}
+  section{padding:50px 20px;max-width:1100px;margin:0 auto;}
+  h2{font-size:1.6rem;margin-bottom:24px;color:var(--teal-dark);text-align:center;}
+  .services-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  .service-card{background:#fff;padding:24px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+  .service-card h3{color:var(--teal-dark);margin-bottom:8px;font-size:1.1rem;}
+  .about{background:#fff;}
+  .about-wrap{display:flex;flex-direction:column;gap:24px;align-items:center;}
+  .about img{border-radius:10px;}
+  .badge{display:inline-block;background:var(--coral);color:#fff;padding:6px 14px;border-radius:20px;font-weight:700;font-size:.9rem;margin-top:12px;}
+  .area-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px;}
+  .area-list span{background:#fff;border:1px solid var(--teal);color:var(--teal-dark);padding:8px 14px;border-radius:20px;font-size:.9rem;}
+  .map-wrap{background:var(--teal-dark);color:#fff;}
+  .map-wrap h2{color:#fff;}
+  iframe{width:100%;height:300px;border:0;border-radius:10px;}
+  .hours-grid{display:flex;flex-direction:column;gap:8px;max-width:400px;margin:0 auto;background:#fff;color:var(--text);padding:20px;border-radius:10px;}
+  .hours-grid div{display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:6px 0;}
+  .contact-grid{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center;}
+  footer{background:var(--teal-dark);color:#cdece7;text-align:center;padding:24px 20px;font-size:.9rem;}
+  footer a{color:var(--coral);text-decoration:none;}
+  @media(min-width:640px){
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .about-wrap{flex-direction:row;text-align:left;}
+    .about img{width:40%;}
+    .about-text{width:60%;}
+  }
+  @media(min-width:1024px){
+    nav ul{position:static;display:flex!important;flex-direction:row;background:none;padding:0;width:auto;}
+    nav a{padding:0 16px;min-height:auto;}
+    .hamburger{display:none;}
+    .services-grid{grid-template-columns:repeat(3,1fr);}
+    .hero h1{font-size:2.6rem;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <a href="#top" class="logo">Doggy Do Mobile Pet Salon</a>
+    <nav>
+      <button class="hamburger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hours">Hours & Area</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call-btn" href="tel:+18013860261">&#128222; Call Now</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <h1>Mobile Dog & Cat Grooming That Comes To You</h1>
+  <p>Doggy Do Mobile Pet Salon brings professional grooming to your door across the Salt Lake City area &mdash; stress-free for your pet, convenient for you.</p>
+  <a class="cta" href="tel:+18013860261">Call (801) 386-0261</a>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card"><h3>Full Grooming</h3><p>Complete bath, cut, and styling in our mobile grooming unit at your home.</p></div>
+    <div class="service-card"><h3>Bath & Groom</h3><p>Quick refresh grooming for dogs and cats of all sizes.</p></div>
+    <div class="service-card"><h3>Breed-Standard Cuts</h3><p>Styling tailored to your pet's breed and coat type.</p></div>
+    <div class="service-card"><h3>Dog & Cat Grooming</h3><p>Specialized, gentle grooming services for both dogs and cats.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-wrap">
+    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=700&q=80" alt="Dog being groomed">
+    <div class="about-text">
+      <h2 style="text-align:left">About Us</h2>
+      <p>With decades of grooming expertise, Doggy Do Mobile Pet Salon takes pride in transforming pets into their most fabulous selves. The fully self-contained mobile salon comes directly to your home, offering a stress-free grooming experience for dogs and cats, big and small.</p>
+      <span class="badge">5.0 &bull; 20 Google Reviews</span>
+    </div>
+  </div>
+</section>
+
+<section class="map-wrap" id="hours">
+  <h2>Hours & Service Area</h2>
+  <div class="hours-grid">
+    <div><span>Monday</span><span>8:00 AM - 5:00 PM</span></div>
+    <div><span>Tuesday</span><span>8:00 AM - 5:00 PM</span></div>
+    <div><span>Wednesday</span><span>8:00 AM - 5:00 PM</span></div>
+    <div><span>Thursday</span><span>8:00 AM - 5:00 PM</span></div>
+    <div><span>Friday</span><span>8:00 AM - 5:00 PM</span></div>
+    <div><span>Saturday</span><span>Closed</span></div>
+    <div><span>Sunday</span><span>Closed</span></div>
+  </div>
+  <div class="area-list">
+    <span>Salt Lake City</span><span>West Jordan</span><span>West Valley City</span><span>Murray</span><span>South Jordan</span>
+  </div>
+  <div style="margin-top:24px;">
+    <iframe loading="lazy" src="https://www.google.com/maps?q=Salt+Lake+City,+UT&output=embed" title="Service area map"></iframe>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-grid">
+    <p><strong>Phone:</strong> <a href="tel:+18013860261">(801) 386-0261</a></p>
+    <p>Serving the Salt Lake City area, including Sugar House. Call to schedule your pet's mobile grooming appointment.</p>
+    <a class="cta" href="tel:+18013860261">Call Now</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Doggy Do Mobile Pet Salon. Serving the Salt Lake City, UT area.</p>
+  <p>Photos: Unsplash (stock images).</p>
+</footer>
+</body>
+</html>

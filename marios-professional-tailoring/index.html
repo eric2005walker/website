@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mario's Professional Tailoring | Alterations & Custom Tailoring in Salt Lake City, UT</title>
+<meta name="description" content="Mario's Professional Tailoring - decades of experience in clothing alterations, mending and repair, and custom tailoring near South Salt Lake, UT.">
+<style>
+  :root{
+    --primary:#263c2f;
+    --primary-dark:#172420;
+    --accent:#b5742b;
+    --bg:#faf7f2;
+    --text:#222;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:var(--bg);}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  header{position:sticky;top:0;z-index:50;background:var(--primary);color:#fff;}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:0.8rem 1.2rem;max-width:1100px;margin:0 auto;}
+  .logo{font-size:1.2rem;font-weight:700;}
+  nav ul{list-style:none;display:none;flex-direction:column;background:var(--primary-dark);position:absolute;top:100%;left:0;right:0;}
+  nav ul li{border-top:1px solid rgba(255,255,255,.15);}
+  nav ul li a{display:block;padding:1rem 1.2rem;min-height:44px;color:#fff;text-decoration:none;}
+  nav.open ul{display:flex;}
+  .hamburger{background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;min-width:44px;min-height:44px;}
+  .call-btn{background:var(--accent);color:#fff;font-weight:700;padding:0.6rem 1rem;border-radius:6px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;}
+  .hero{background:linear-gradient(rgba(23,36,32,.78),rgba(23,36,32,.78)),url('https://images.unsplash.com/photo-1619627826534-b21ea63cf78a?auto=format&fit=crop&w=1400&q=60') center/cover;color:#fff;padding:4rem 1.2rem;text-align:center;}
+  .hero h1{font-size:2rem;margin-bottom:0.8rem;}
+  .hero p{font-size:1.1rem;max-width:600px;margin:0 auto 1.5rem;}
+  .btn-primary{background:var(--accent);color:#fff;font-weight:700;padding:0.9rem 1.6rem;border-radius:6px;text-decoration:none;display:inline-block;min-height:44px;}
+  section{padding:3rem 1.2rem;max-width:1100px;margin:0 auto;}
+  h2{font-size:1.6rem;margin-bottom:1.2rem;color:var(--primary-dark);text-align:center;}
+  .services{display:grid;grid-template-columns:1fr;gap:1.2rem;}
+  .card{background:#fff;border:1px solid #e6e0d5;border-radius:10px;padding:1.3rem;}
+  .card h3{color:var(--primary);margin-bottom:0.4rem;}
+  .about-grid{display:flex;flex-direction:column;gap:1.5rem;align-items:center;}
+  .about-grid img{border-radius:10px;}
+  .hours-location{display:flex;flex-direction:column;gap:1.5rem;}
+  .hours table{width:100%;border-collapse:collapse;}
+  .hours td{padding:0.4rem 0.2rem;border-bottom:1px solid #e6e0d5;}
+  iframe{width:100%;height:280px;border:0;border-radius:10px;}
+  .contact{text-align:center;background:var(--primary);color:#fff;}
+  .contact a.btn-primary{margin-top:1rem;}
+  footer{background:var(--primary-dark);color:#fff;text-align:center;padding:1.5rem;font-size:0.9rem;}
+  @media(min-width:640px){
+    .services{grid-template-columns:1fr 1fr;}
+    .hours-location{flex-direction:row;}
+    .hours-location>div{flex:1;}
+  }
+  @media(min-width:1024px){
+    nav ul{display:flex !important;flex-direction:row;position:static;background:none;}
+    nav ul li{border-top:none;}
+    nav ul li a{padding:0.5rem 1rem;}
+    .hamburger{display:none;}
+    .about-grid{flex-direction:row;align-items:center;}
+    .about-grid img{flex:1;}
+    .about-grid .text{flex:1;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <div class="logo">Mario's Professional Tailoring</div>
+    <nav id="mainNav">
+      <button class="hamburger" aria-label="Toggle menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hours">Hours & Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call-btn" href="tel:+18013636273">Call (801) 363-6273</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Professional Tailoring &amp; Alterations Near South Salt Lake</h1>
+  <p>Decades of hands-on tailoring experience &mdash; alterations, mending, and repair done with care and craftsmanship.</p>
+  <a class="btn-primary" href="tel:+18013636273">Call Now</a>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card"><h3>Clothing Alterations</h3><p>Expert alterations to get your garments fitting exactly how you want.</p></div>
+    <div class="card"><h3>Mending &amp; Repair</h3><p>Reliable clothing mending and repair work for everyday wear.</p></div>
+    <div class="card"><h3>Uniform Alterations</h3><p>Alterations for uniforms, including sizing and fit adjustments.</p></div>
+    <div class="card"><h3>Custom Fitting</h3><p>Personalized fitting services backed by decades of tailoring experience.</p></div>
+  </div>
+</section>
+
+<section id="about" style="background:#fff;">
+  <h2>About Mario's Professional Tailoring</h2>
+  <div class="about-grid">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&q=60" alt="Tailor measuring fabric at a workbench">
+    <div class="text">
+      <p>Mario's Professional Tailoring is a well-established tailoring business near South Salt Lake, specializing in alterations and custom tailoring services for a diverse clientele seeking high-quality craftsmanship.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <h2>Hours &amp; Location</h2>
+  <div class="hours-location">
+    <div class="hours">
+      <table>
+        <tr><td>Monday&ndash;Saturday</td><td>12:00 PM &ndash; 6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p style="margin-top:1rem;">2330 S Main St Ste 9, South Salt Lake, UT 84115</p>
+    </div>
+    <div>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2330+S+Main+St+Ste+9,+South+Salt+Lake,+UT+84115&output=embed" title="Map to Mario's Professional Tailoring"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 style="color:#fff;">Get In Touch</h2>
+  <p>Call to discuss your alteration or tailoring needs.</p>
+  <a class="btn-primary" href="tel:+18013636273">(801) 363-6273</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mario's Professional Tailoring &middot; 2330 S Main St Ste 9, South Salt Lake, UT 84115 &middot; (801) 363-6273</p>
+  <p>Photos are stock images for illustration purposes.</p>
+</footer>
+</body>
+</html>
